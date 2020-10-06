@@ -24,6 +24,7 @@ console.log(frase.toLowerCase());
 //console.log(lista.toString()); //transforma o array p/ string
 //console.log(lista.join(' - ')); //transforma o array p/ string e altera o separador
 
+/*
 var fruta = {nome: 'maça', cor: 'vermelha'}; //dicionário
 console.log(fruta);
 console.log(fruta.nome);
@@ -32,3 +33,28 @@ console.log(fruta.nome);
 var frutas = [{nome: 'maça', cor: 'vermelha'}, {nome: 'banana', cor: 'verde'}]; //coleção
 console.log(frutas);
 console.log(frutas[1]);
+*/
+
+//Condicionais, laços de repetição e date:
+/*
+var idade = prompt('Qual a sua idade?')
+
+if(idade >= 18) alert('Maior de idade');
+else alert('Menor de idade');
+*/
+/*
+var count = 0;
+while(count < 5) {
+    console.log(count);
+    count = count + 1;
+}
+*/
+
+//for(count = 0; count <= 5; count++) console.log(count);
+
+var d = new Date(); // data atual
+console.log(d);
+console.log(d.getMonth()+1); // mês atual
+console.log(d.getDay()); // dia da semana
+console.log(d.getDate());
+console.log(d.getHours());
