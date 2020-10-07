@@ -51,10 +51,61 @@ while(count < 5) {
 */
 
 //for(count = 0; count <= 5; count++) console.log(count);
-
+/*
 var d = new Date(); // data atual
 console.log(d);
 console.log(d.getMonth()+1); // mês atual
 console.log(d.getDay()); // dia da semana
 console.log(d.getDate());
-console.log(d.getHours());
+console.log(d.getHours());*/
+
+/**Funções */
+/*
+function soma(n1, n2) {
+    return n1 + n2
+}
+
+function validaIdade(idade) {
+    var validada
+
+    if(idade >= 18) validada = true;
+    else validada = false
+
+    return validada
+}
+
+//console.log(soma(5, 10));
+console.log(validaIdade(prompt('Qual a sua idade?')));
+*/
+
+/*****Manipulando elementos */
+
+function clicou() {
+    document.getElementById('agradecimento').innerHTML = '<b>Obrigado por clicar!</b>'; 
+
+    //return alert('Obrigado por clicar!');
+}
+
+function redirecionar() {
+    //window.open('https://www.google.com.br/');
+    window.location.href = 'https://www.google.com.br/';
+}
+
+function trocar(elemento) {
+    elemento.innerHTML = 'Obrigado por passar o mouse!';
+    //document.getElementById('mousemover').innerHTML = 'Obrigado por passar o mouse!'
+    //alert('Trocar texto');
+}
+
+function voltar(elemento) {
+    elemento.innerHTML = 'Passe o mouse aqui'
+    //document.getElementById('mousemover').innerHTML = 'Passe o mouse aqui'
+}
+
+function load() {
+    alert('Página carregada!')
+}
+
+function funcaoChange(elemento) {
+    console.log(elemento.value);
+}
